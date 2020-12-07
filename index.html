@@ -1,28 +1,13 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>LST Viewer - Baix Llobregat - 1985-2020</title>
+    <title>LST Viewer - Baix Llobregat - 1985/2020</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
    
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css' rel='stylesheet' />
-    <link href='css\estilLSTNDVI19852020.css' rel='stylesheet' />
+    <link href='css\estilLST.css' rel='stylesheet' />
  
-    <style>
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%
-        }
-    </style>
-
     <script>
 
         var map;
@@ -35,7 +20,7 @@
             map = new mapboxgl.Map({
                 container: 'map',
                 style: 'https://tilemaps.icgc.cat/tileserver/styles/terrain.json',
-                center: [1.962296375, 41.397212134],
+                center: [1.962296375, 41.38],
                 zoom: 10.9,
                 hash: true,
                 pitch: 45,
@@ -69,7 +54,7 @@
                     source: "MunBaiLlopm",
                     paint: {
                         "fill-opacity":0.2,
-                        "fill-color":"orange",
+                        "fill-color":"salmon",
                     }                                
             });
                 map.addSource("MunBaiLlopuntsm", {
@@ -82,7 +67,7 @@
                     type: "circle",
                     source: "MunBaiLlopuntsm",
                     paint: {
-                        "circle-radius":10,
+                        "circle-radius":9,
                         "circle-opacity": 0.8,
                         "circle-color": 'blue'
                 }
@@ -140,7 +125,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties:     {
-                            description:'<div class="LST_link"><a href="images/080018.webm" target="_blank" title="Opens in a new window">ABRERA LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080018.webm" target="_blank" title="Opens in a new window">ABRERA <br> LST 1985/2020 - Click here</a></div>'
                                     },
                         geometry:   {
                             type: 'Point',
@@ -151,7 +136,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080207.webm" target="_blank" title="Opens in a new window">BEGUESLST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080207.webm" target="_blank" title="Opens in a new window">BEGUES <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -162,7 +147,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080569.webm" target="_blank" title="Opens in a new window">CASTELLDEFELS LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080569.webm" target="_blank" title="Opens in a new window">CASTELLDEFELS <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -173,7 +158,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080667.webm" target="_blank" title="Opens in a new window">CASTELLVÍ DE ROSANES LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080667.webm" target="_blank" title="Opens in a new window">CASTELLVÍ DE ROSANES <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -184,7 +169,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080689.webm" target="_blank" title="Opens in a new window">CERVELLÓ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080689.webm" target="_blank" title="Opens in a new window">CERVELLÓ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -195,7 +180,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080692.webm" target="_blank" title="Opens in a new window">COLLBATÓ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080692.webm" target="_blank" title="Opens in a new window">COLLBATÓ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -206,7 +191,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080728.webm" target="_blank" title="Opens in a new window">CORBERA DE LLOBREGAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080728.webm" target="_blank" title="Opens in a new window">CORBERA DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -217,7 +202,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080734.webm" target="_blank" title="Opens in a new window">CORNELLÀ DE LLOBREGATLST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080734.webm" target="_blank" title="Opens in a new window">CORNELLÀ DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -228,7 +213,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080765.webm" target="_blank" title="Opens in a new window">ESPARREGUERA LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080765.webm" target="_blank" title="Opens in a new window">ESPARREGUERA <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -239,7 +224,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080771.webm" target="_blank" title="Opens in a new window">ESPLUGUES DE LLOBREGAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080771.webm" target="_blank" title="Opens in a new window">ESPLUGUES DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -250,7 +235,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/080898.webm" target="_blank" title="Opens in a new window">GAVÀ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/080898.webm" target="_blank" title="Opens in a new window">GAVÀ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -261,7 +246,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class=><a href="images/081141.webm" target="_blank" title="Opens in a new window">MARTORELL LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081141.webm" target="_blank" title="Opens in a new window">MARTORELL <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -272,7 +257,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/081234.webm" target="_blank" title="Opens in a new window">MOLINS DE REI LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081234.webm" target="_blank" title="Opens in a new window">MOLINS DE REI <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -283,7 +268,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/081477.webm" target="_blank" title="Opens in a new window">OLESA DE MONTSERRAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081477.webm" target="_blank" title="Opens in a new window">OLESA DE MONTSERRAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -294,7 +279,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/081574.webm" target="_blank" title="Opens in a new window">PALLEJÀ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081574.webm" target="_blank" title="Opens in a new window">PALLEJÀ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -305,7 +290,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/081580.webm" target="_blank" title="Opens in a new window">EL PAPIOL LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081580.webm" target="_blank" title="Opens in a new window">EL PAPIOL <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -316,7 +301,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/081691.webm" target="_blank" title="Opens in a new window">EL PRAT DE LLOBREGAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081691.webm" target="_blank" title="Opens in a new window">EL PRAT DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -327,7 +312,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/081960.webm" target="_blank" title="Opens in a new window">SANT ANDREU DE LA BARCA LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/081960.webm" target="_blank" title="Opens in a new window">SANT ANDREU DE LA BARCA <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -338,7 +323,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082009.webm" target="_blank" title="Opens in a new window">SANT BOI DE LLOBREGAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082009.webm" target="_blank" title="Opens in a new window">SANT BOI DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -349,7 +334,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082042.webm" target="_blank" title="Opens in a new window">SANT CLIMENT DE LLOBREGAT LST 1985-2020 - Click here</a></div><'
+                            description:'<div class="LST_link"><a href="images/082042.webm" target="_blank" title="Opens in a new window">SANT CLIMENT DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div><'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -360,7 +345,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082080.webm" target="_blank" title="Opens in a new window">SANT ESTEVE SESROVIRES LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082080.webm" target="_blank" title="Opens in a new window">SANT ESTEVE SESROVIRES <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -371,7 +356,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082114.webm" target="_blank" title="Opens in a new window">SANT FELIU DE LLOBREGAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082114.webm" target="_blank" title="Opens in a new window">SANT FELIU DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -382,7 +367,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082172.webm" target="_blank" title="Opens in a new window">SANT JOAN DESPÍ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082172.webm" target="_blank" title="Opens in a new window">SANT JOAN DESPÍ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -393,7 +378,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082212.webm" target="_blank" title="Opens in a new window">SANT JUST DESVERN LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082212.webm" target="_blank" title="Opens in a new window">SANT JUST DESVERN <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -404,7 +389,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082444.webm" target="_blank" title="Opens in a new window">SANTA COLOMA DE CERVELLÓ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082444.webm" target="_blank" title="Opens in a new window">SANTA COLOMA DE CERVELLÓ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -415,7 +400,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082634.webm" target="_blank" title="Opens in a new window">SANT VICENÇ DELS HORTS LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082634.webm" target="_blank" title="Opens in a new window">SANT VICENÇ DELS HORTS <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -426,7 +411,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082896.webm" target="_blank" title="Opens in a new window">TORRELLES DE LLOBREGAT LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082896.webm" target="_blank" title="Opens in a new window">TORRELLES DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -437,7 +422,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082956.webm" target="_blank" title="Opens in a new window">VALLIRANA LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/082956.webm" target="_blank" title="Opens in a new window">VALLIRANA <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -448,7 +433,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/083015.webm" target="_blank" title="Opens in a new window">VILADECANS LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/083015.webm" target="_blank" title="Opens in a new window">VILADECANS <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -459,7 +444,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/089058.webm" target="_blank" title="Opens in a new window">LA PALMA DE CERVELLÓ LST 1985-2020 - Click here</a></div>'
+                            description:'<div class="LST_link"><a href="images/089058.webm" target="_blank" title="Opens in a new window">LA PALMA DE CERVELLÓ <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -477,7 +462,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
             type: 'circle',
             source: 'MunBaiLlo-popups',
             paint: {
-                    "circle-radius":4,
+                    "circle-radius":6,
                     "circle-color": 'red',
                     "circle-opacity":1
                     }   
@@ -520,8 +505,9 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
 <body onload="Init()">
     <div id='map'>
         <div class="títol">
-            <p>Land Surface Temperature 1985-2020</p>
+            <p>Land Surface Temperature 1985/2020</p>
             <p>Baix Llobregat Region</p>
+        </div>
     </div>
 </body>
 </html>
