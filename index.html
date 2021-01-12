@@ -89,7 +89,7 @@
 
         if (key == 'Municipi') {
 
-text += "<div class='townname'=>"+e.features[0].properties[key]+"</div>"+'<div class="clickhere_text">CLICK on the red circle for more details...</div>'+'<br>'
+text += "<div class='townname'=>"+e.features[0].properties[key]+"</div>"+'<div class="clickhere_text">CLICK on the<strong> red circle </strong>for more details...</div>'+'<br>'
 }
 
   };
@@ -334,7 +334,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
                     {
                         type: "Feature",
                         properties: {
-                            description:'<div class="LST_link"><a href="images/082042IMP.webm" target="_blank" title="Opens in a new window">SANT CLIMENT DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div><'
+                            description:'<div class="LST_link"><a href="images/082042IMP.webm" target="_blank" title="Opens in a new window">SANT CLIMENT DE LLOBREGAT <br> LST 1985/2020 - Click here</a></div>'
                                 },
                         geometry:   {
                             type: 'Point',
@@ -507,6 +507,7 @@ map.on('mouseleave', "MunBaiLlopuntsm-layer", function () {
         <div class="títol">
             <p>Land Surface Temperature <br> <br> 1985/2020</p>
             <p>Baix Llobregat Region</p>
+            <p>Towns</p>
         </div>
     </div>
 </body>
